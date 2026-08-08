@@ -1,0 +1,12 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: Lint client
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npm run lint:fix -- {staged_files}
+      root: client
+      stage_fixed: true
+    - name: Format client
+      run: npm run format
+      root: client
+      stage_fixed: true

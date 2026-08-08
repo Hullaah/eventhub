@@ -1,0 +1,11 @@
+{
+  "tailwindCSS.experimental.configFile": "client/app/globals.css",
+  "prettier.configPath": "client/.prettierrc",
+  "prettier.ignorePath": "client/.prettierignore",
+  "prettier.prettierPath": "client/node_modules/prettier",
+  "js/ts.tsdk.path": "client/node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  "[yaml]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+}
