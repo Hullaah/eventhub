@@ -1,10 +1,10 @@
 # EventHub
 
-A full-stack event management system for organizing, discovering, and RSVPing to campus events, with Google Calendar sync.
+An event management and RSVP platform for organizing, discovering, and RSVPing to events, with Google Calendar sync, location intelligence to natural language event discovery.
 
 ## Status
 
-Early development — SIWES defense project, in progress.
+Early development — In progress.
 
 ## Stack
 
@@ -23,4 +23,4 @@ Early development — SIWES defense project, in progress.
 
 ## License
 
-MIT
+GNU Affero General Public License [(AGPL-3.0)](./LICENSE)

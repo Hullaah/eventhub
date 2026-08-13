@@ -5,7 +5,28 @@
   "prettier.prettierPath": "client/node_modules/prettier",
   "js/ts.tsdk.path": "client/node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.languageServerMode": "full",
+  "python.analysis.autoImportCompletions": true,
+  "mypy-type-checker.cwd": "${workspaceFolder}/server",
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "ruff.configuration": "server/pyproject.toml",
   "[yaml]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit",
+    }
+  },
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+    }
+  },
+  "[toml]": {
+    "editor.formatOnSave": false,
   },
 }

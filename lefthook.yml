@@ -2,11 +2,19 @@ pre-commit:
   parallel: true
   jobs:
     - name: Lint client
-      glob: "*.{js,ts,jsx,tsx}"
+      glob: "*.{ts,tsx}"
       run: npm run lint:fix -- {staged_files}
       root: client
       stage_fixed: true
     - name: Format client
       run: npm run format
       root: client
+      stage_fixed: true
+    - name: Lint server
+      run: uv run ruff check --fix
+      root: server
+      stage_fixed: true
+    - name: Format server
+      run: uv run ruff format
+      root: server
       stage_fixed: true
